@@ -11,11 +11,7 @@ var PORT = process.env.PORT || 3306;
 //     console.log("listening on port:",PORT)
 // })
 // middleware
-app.use((req ,res,next)=>{
-    console.log (req.url);
 
-    next();
-});
 // Set up body parsing, static, and route middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
