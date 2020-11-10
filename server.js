@@ -6,11 +6,7 @@ const htmlRoutes = require("./routes/htmlRoutes");
 const app = express();
 
 // Port
-var PORT = process.env.PORT || 3306;
-// app.listen(PORT, function() {
-//     console.log("listening on port:",PORT)
-// })
-// middleware
+var PORT = process.env.PORT || 3000;
 
 // Set up body parsing, static, and route middleware
 app.use(express.json());
