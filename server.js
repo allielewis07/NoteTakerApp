@@ -17,16 +17,16 @@ app.use("/", htmlRoutes);
 
 
 // route
-app.get('/',(req , res ) =>{
+app.get('/', (req, res) => {
     res.send('got you!')
 })
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
-    });
+});
 
 // Listen
-app.listen(PORT,()=>{
+app.listen(PORT, () => {
     console.log(`Server started on http:localhost:${PORT}`);
 }) 
